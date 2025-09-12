@@ -1,47 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower-Web</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower-Web</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-   <nav class="flex items-center lg:w-10/12 w-11/12 mx-auto my-4 justify-between">
+
+
+  <!-- Nav Section -->
+
+
+
+  <nav class="flex items-center lg:w-10/12 w-11/12 mx-auto my-4 justify-between">
     <div><img class="h-15" src="assets/logo.png" alt="">
     </div>
-   <div class="flex space-x-5">
+    <div class="flex space-x-5">
       <div class="hidden lg:space-x-5 lg:block ">
         <a href="">Home</a>
         <a href="">Shop</a>
         <a href="">About Us</a>
+      </div>
+      <div> <i class="fa-solid fa-cart-shopping"></i> cart (56$)</div>
     </div>
-    <div> <i class="fa-solid fa-cart-shopping"></i> cart (56$)</div>
-   </div>
-   </nav>
+  </nav>
+
+
+  <!-- Hero Section  -->
+
+
+  <section>
+    <div class="lg:flex lg:w-10/12 lg:mx-auto flex-row-reverse items-center">
+      <div class="my-8 lg:flex-1">
+        <img class="w-full mb-8 h-60" src="assets/hero-flower.png" alt="">
+      </div>
+      <div class="w-11/12 lg:flex-1 mx-auto">
+        <h1 class="font-bold lg:font-extrabold lg:text-5xl text-4xl mb-5">ALWAYS <span class="text-[#E95A08]">FRESH
+            FLOWERS</span></h1>
+        <p class="text-[#00000080] mb-12">Indulge your senses with the beauty and fragrance of our fresh flower shop.
+          From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any
+          occasion. </p>
+      </div>
+    </div>
+
+  </section>
 
 
 
-  <div class="lg:flex lg:w-10/12 lg:mx-auto flex-row-reverse items-center">
-     <div class="my-8 lg:flex-1">
-    <img  class="w-full mb-8 h-60" src="assets/hero-flower.png" alt="">
-   </div>
-   <div class="w-11/12 lg:flex-1 mx-auto">
-    <h1 class="font-bold lg:font-extrabold lg:text-5xl text-4xl mb-5">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h1>
-    <p class="text-[#00000080] mb-12">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
-   </div>
-  </div>
+
+  <!-- Our Plants Section -->
 
 
+
+
+  <section>
+    <div class="text-center lg:w-10/12 lg:mx-auto w-11/12 mx-auto">
+      <h1 class="font-bold lg:font-extrabold lg:text-5xl text-4xl mb-5">Our <span class="text-[#E95A08]">Plants</span>
+      </h1>
+      <p class="text-[#00000080] mb-12">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+        classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    </div>
+
+    <div class="grid w-11/12 lg:w-10/12 lg:mx-auto lg:grid lg:grid-cols-4 lg:gap-6 mx-auto gap-4 grid-cols-2">
+
+      <div>
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div>
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div>
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div>
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div>
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div>
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div class="hidden lg:block">
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+      <div class="hidden lg:block">
+        <img src="assets/sample-flower-image.png" alt="">
+        <p class=" mt-4 font-semibold text-center">Lily Blossom</p>
+        <p class="font-bold text-center mb-4">20 USD</p>
+        <button class="bg-[#E95A08] w-full p-2 text-white">ADD TO CART</button>
+      </div>
+
+    </div>
+
+  </section>
 
 
 </body>
+
 </html>
